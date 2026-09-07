@@ -8,7 +8,7 @@ don't watch real houses, because
 this study not on real houses and
 just 10, for test
 
-#❔ Why I made it
+# ❔ Why I made it
 I made it just for study python
 and in the future create a 
 programs that can search real
