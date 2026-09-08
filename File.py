@@ -28,12 +28,14 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 Predict = model.predict(X_test)
-
-Rooms = int(input("    how much you have rooms: "))
-Square_meters = float(input("how much square_meters you have: "))
-Age = int(input("     how is old your house: "))
-Floor = int(input( "how much you have a floars: "))
-
+while True:
+    try:
+        Rooms = int(input("    how much you have rooms: "))
+        Square_meters = float(input("how much square_meters you have: "))
+        Age = int(input("     how is old your house: "))
+        Floor = int(input( "how much you have a floars: "))
+    except Exception:
+        print("you write something wrong")
 User_data = pd.DataFrame(
 [[Rooms, Square_meters, Age, Floor ]] ,columns = X.columns)
 predicted_price = model.predict(User_data)
