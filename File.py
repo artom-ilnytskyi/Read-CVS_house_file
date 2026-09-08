@@ -34,6 +34,7 @@ while True:
         Square_meters = float(input("how much square_meters you have: "))
         Age = int(input("     how is old your house: "))
         Floor = int(input( "how much you have a floars: "))
+        break
     except Exception:
         print("you write something wrong")
 User_data = pd.DataFrame(
